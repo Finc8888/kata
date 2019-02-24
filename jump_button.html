@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    @keyframes bouncing {
+    0% {bottom: 50%;box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+    100% {bottom: 55%;box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+  }
+  .loading-button{
+    display: flex;
+    justify-content: center;
+  }
+    button{
+      animation: bouncing 0.5s
+      cubic-bezier(0.1,0.25,0.1,1) 0s
+      infinite alternate both;
+    }
+    button{
+      position: absolute;
+
+      width: 20vh;
+      height: 5vh;
+      font-size: 16px;
+      font-weight: bold;
+      color:teal;
+      /* transform: translateX(50%);
+      transform: translateY(-50%); */
+      /* margin: 0,auto; */
+      /* top: 50%;
+      left:50%; */
+    }
+    button:hover{
+      cursor: pointer;
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-button">
+    <button type="button" name="button">Загрузить</button>
+  </div>
+</body>
+</html>
